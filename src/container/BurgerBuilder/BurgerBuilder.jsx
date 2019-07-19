@@ -31,6 +31,10 @@ class BurgerBuilder extends Component {
     this.setState({ purchasing: false });
   };
 
+  purchaseContinueHandler = () => {
+    alert("order continue");
+  };
+
   updatePurchaseState(ingredients) {
     const sum = Object.keys(ingredients)
       .map(igKey => {
@@ -90,7 +94,12 @@ class BurgerBuilder extends Component {
           show={this.state.purchasing}
           cancelModal={this.purchaseCancelHandler}
         >
-          <OrderSummary ingredients={this.state.ingredients} />
+          <OrderSummary
+            ingredients={this.state.ingredients}
+            price={this.state.totalPrice}
+            onCancel={this.purchaseCancelHandler}
+            onContinue={this.purchaseContinueHandler}
+          />
         </Modal>
         <Buildcontrols
           ingredientAdded={this.addIngredientHandler}

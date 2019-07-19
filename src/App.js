@@ -8,7 +8,7 @@ import Layout from "./components/Layout/Layout";
 import BurgerBuilder from "./container/BurgerBuilder/BurgerBuilder";
 function App() {
   return (
-    <div className={cn("container", styles.App)}>
+    <div>
       <Layout>
         <BurgerBuilder />
       </Layout>
