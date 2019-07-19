@@ -1,0 +1,9 @@
+.summary {
+}
+.summary ul li {
+  display: block;
+}
+
+.summary ul li span {
+  text-transform: capitalize;
+}

@@ -5,10 +5,13 @@ import globalStyles from "../src/assets/global-style/bootstrap.module.css";
 //import globalStyles from "../src/assets/global-style/bootstrap.module.css";
 import cn from "classnames";
 import Layout from "./components/Layout/Layout";
+import BurgerBuilder from "./container/BurgerBuilder/BurgerBuilder";
 function App() {
   return (
     <div className={cn("container", styles.App)}>
-      <Layout>test</Layout>
+      <Layout>
+        <BurgerBuilder />
+      </Layout>
     </div>
   );
 }
