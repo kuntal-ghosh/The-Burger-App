@@ -1,7 +1,8 @@
-.summary {
-}
+.summary {}
+
 .summary ul li {
   display: block;
+  margin-left: -50px;
 }
 
 .summary ul li span {
